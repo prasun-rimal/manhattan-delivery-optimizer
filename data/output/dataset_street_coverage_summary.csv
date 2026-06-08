@@ -1,0 +1,8 @@
+metric,count
+Unique traffic streets,9
+Unique truck-route streets,183
+Unique parking streets,257
+Traffic and truck-route overlap,8
+Traffic and parking overlap,6
+Truck-route and parking overlap,73
+Streets found in all three datasets,5

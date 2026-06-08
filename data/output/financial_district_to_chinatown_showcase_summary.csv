@@ -1,0 +1,2 @@
+origin,destination,baseline_distance_meters,optimized_distance_meters,added_distance_meters,baseline_delivery_cost,optimized_delivery_cost,delivery_cost_improvement,optimized_traffic_coverage_percent,optimized_parking_coverage_percent,optimized_truck_coverage_percent,optimized_two_component_coverage_percent,dijkstra_and_astar_agree
+Financial District,Chinatown,2577.56,2612.57,35.01,3464.6,3429.98,34.62,19.17,81.74,77.08,77.08,True

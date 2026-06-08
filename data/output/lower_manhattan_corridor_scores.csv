@@ -1,0 +1,3 @@
+street_standardized,average_traffic_volume,congestion_penalty,parking_sign_records,parking_access_score,parking_penalty,truck_route_segments,restricted_segments,truck_restriction_risk,delivery_cost_score
+SOUTH STREET,40.18,0.149,2,1.0,0.0,50,0,0.0,0.059
+PEARL STREET,106.803,0.512,23,0.778,0.222,17,0,0.0,0.271

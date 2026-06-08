@@ -1,0 +1,8 @@
+route,components_observed,road_segments,distance_meters,delivery_cost
+Shortest-distance baseline,0,18,1787.07,2680.6
+Shortest-distance baseline,1,10,839.79,1157.58
+Shortest-distance baseline,2,10,840.79,1052.67
+Shortest-distance baseline,3,7,500.77,636.57
+Delivery-aware optimized,0,3,283.12,424.67
+Delivery-aware optimized,1,11,934.17,1261.13
+Delivery-aware optimized,2,37,2983.94,3679.51

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manhattan Last-Mile Delivery Optimizer</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+<body>
+    <header>
+        <h1>Manhattan Last-Mile Delivery Optimizer</h1>
+        <p>
+            Compare a shortest-distance route with a delivery-aware route
+            using traffic, curb-access, and truck-route data.
+        </p>
+    </header>
+
+    <main>
+        <section class="control-panel">
+            <h2>Route Request</h2>
+
+            <div class="form-row">
+                <label for="origin">Origin</label>
+                <select id="origin">
+                    {% for location in locations %}
+                        <option value="{{ location }}">{{ location }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="destination">Destination</label>
+                <select id="destination">
+                    {% for location in locations %}
+                        <option value="{{ location }}"
+                            {% if location == "Chinatown" %}selected{% endif %}
+                        >
+                            {{ location }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button id="calculate-route-button">
+                Calculate Route
+            </button>
+
+            <div id="error-message"></div>
+
+            <div class="legend">
+                <div>
+                    <span class="legend-line baseline"></span>
+                    Shortest-distance baseline
+                </div>
+                <div>
+                    <span class="legend-line optimized"></span>
+                    Delivery-aware optimized
+                </div>
+            </div>
+        </section>
+
+        <section class="results-panel">
+            <h2>Route Results</h2>
+
+            <div class="result-grid">
+                <div class="result-card">
+                    <span class="label">Baseline distance</span>
+                    <span id="baseline-distance" class="value">--</span>
+                </div>
+
+                <div class="result-card">
+                    <span class="label">Optimized distance</span>
+                    <span id="optimized-distance" class="value">--</span>
+                </div>
+
+                <div class="result-card">
+                    <span class="label">Added distance</span>
+                    <span id="added-distance" class="value">--</span>
+                </div>
+
+                <div class="result-card">
+                    <span class="label">Cost improvement</span>
+                    <span id="cost-improvement" class="value">--</span>
+                </div>
+            </div>
+
+            <h3>Optimized Route Data Coverage</h3>
+
+            <div class="coverage-grid">
+                <div>
+                    <span class="label">Traffic observations</span>
+                    <span id="traffic-coverage" class="value">--</span>
+                </div>
+
+                <div>
+                    <span class="label">Parking/loading data</span>
+                    <span id="parking-coverage" class="value">--</span>
+                </div>
+
+                <div>
+                    <span class="label">Truck-route data</span>
+                    <span id="truck-coverage" class="value">--</span>
+                </div>
+
+                <div>
+                    <span class="label">Two or more components</span>
+                    <span id="two-component-coverage" class="value">--</span>
+                </div>
+            </div>
+
+            <p id="algorithm-check">
+                Algorithm check: --
+            </p>
+        </section>
+
+        <section class="map-panel">
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <!-- Project JS -->
+    <script
+        src="{{ url_for('static', filename='js/map.js') }}">
+    </script>
+</body>
+</html>

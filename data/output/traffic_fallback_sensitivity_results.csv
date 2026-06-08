@@ -1,0 +1,64 @@
+traffic_fallback_penalty,origin,destination,route_changed,baseline_distance_meters,optimized_distance_meters,distance_change_meters,baseline_delivery_cost,optimized_delivery_cost,delivery_cost_improvement,optimized_traffic_coverage_percent
+0.25,Battery Park,Financial District,False,641.87,641.87,0.0,787.87,787.87,0.0,0.0
+0.25,Battery Park,South Street Seaport,False,1707.18,1707.18,0.0,2068.11,2068.11,0.0,15.37
+0.25,Battery Park,Civic Center,False,1761.68,1761.68,0.0,2064.54,2064.54,0.0,0.0
+0.25,Battery Park,Chinatown,False,2586.97,2586.97,0.0,3249.33,3249.33,0.0,19.36
+0.25,Battery Park,Lower East Side,True,3326.8,3589.96,263.16,4261.62,4144.79,116.83,0.0
+0.25,Battery Park,East Village South,True,3977.84,4242.86,265.02,5173.07,5011.09,161.98,0.0
+0.25,Financial District,South Street Seaport,True,1697.76,1732.78,35.01,2075.69,2037.57,38.12,15.15
+0.25,Financial District,Civic Center,False,1720.05,1720.05,0.0,1998.65,1998.65,0.0,0.0
+0.25,Financial District,Chinatown,True,2577.56,2612.57,35.01,3256.92,3218.8,38.12,19.17
+0.25,Financial District,Lower East Side,True,3317.39,3548.33,230.94,4269.21,4078.9,190.31,0.0
+0.25,Financial District,East Village South,True,3968.43,4201.23,232.8,5180.66,4945.19,235.46,0.0
+0.25,South Street Seaport,Civic Center,True,1657.64,1657.7,0.06,2053.74,2050.64,3.1,5.23
+0.25,South Street Seaport,Chinatown,False,1163.79,1163.79,0.0,1485.83,1485.83,0.0,35.59
+0.25,South Street Seaport,Lower East Side,True,1903.63,2041.91,138.28,2498.12,2487.98,10.14,20.28
+0.25,South Street Seaport,East Village South,True,2554.66,2694.81,140.15,3409.57,3354.27,55.3,15.37
+0.25,Civic Center,Chinatown,False,1011.78,1011.78,0.0,1233.82,1233.82,0.0,0.0
+0.25,Civic Center,Lower East Side,True,1751.62,1821.57,69.95,2246.11,2173.6,72.51,0.0
+0.25,Civic Center,East Village South,True,2402.65,2474.47,71.81,3157.56,3039.89,117.67,0.0
+0.25,Chinatown,Lower East Side,False,878.12,878.12,0.0,1002.15,1002.15,0.0,0.0
+0.25,Chinatown,East Village South,True,1525.89,1531.02,5.13,1910.89,1868.44,42.45,0.0
+0.25,Lower East Side,East Village South,False,651.04,651.04,0.0,911.45,911.45,0.0,0.0
+0.5,Battery Park,Financial District,False,641.87,641.87,0.0,852.06,852.06,0.0,0.0
+0.5,Battery Park,South Street Seaport,True,1707.18,1709.02,1.84,2212.58,2201.3,11.28,25.3
+0.5,Battery Park,Civic Center,False,1761.68,1761.68,0.0,2240.71,2240.71,0.0,0.0
+0.5,Battery Park,Chinatown,False,2586.97,2586.97,0.0,3457.95,3457.95,0.0,19.36
+0.5,Battery Park,Lower East Side,True,3326.8,3578.7,251.9,4544.23,4441.17,103.05,39.41
+0.5,Battery Park,East Village South,True,3977.84,4322.13,344.29,5520.78,5412.86,107.92,32.63
+0.5,Financial District,South Street Seaport,True,1697.76,1734.61,36.85,2219.22,2173.32,45.9,24.93
+0.5,Financial District,Civic Center,False,1720.05,1720.05,0.0,2170.65,2170.65,0.0,0.0
+0.5,Financial District,Chinatown,True,2577.56,2612.57,35.01,3464.6,3429.98,34.62,19.17
+0.5,Financial District,Lower East Side,True,3317.39,3604.3,286.91,4550.87,4413.2,137.67,39.13
+0.5,Financial District,East Village South,True,3968.43,4201.23,232.8,5527.42,5365.32,162.11,0.0
+0.5,South Street Seaport,Civic Center,True,1657.64,1657.7,0.06,2210.84,2207.74,3.09,5.23
+0.5,South Street Seaport,Chinatown,False,1163.79,1163.79,0.0,1560.8,1560.8,0.0,35.59
+0.5,South Street Seaport,Lower East Side,True,1903.63,2113.26,209.63,2647.07,2614.57,32.5,41.24
+0.5,South Street Seaport,East Village South,True,2554.66,2694.81,140.15,3623.62,3582.34,41.28,15.37
+0.5,Civic Center,Chinatown,False,1011.78,1011.78,0.0,1335.0,1335.0,0.0,0.0
+0.5,Civic Center,Lower East Side,True,1751.62,1821.57,69.95,2421.27,2355.75,65.52,0.0
+0.5,Civic Center,East Village South,True,2402.65,2474.47,71.81,3397.83,3287.34,110.48,0.0
+0.5,Chinatown,Lower East Side,False,878.12,878.12,0.0,1089.96,1089.96,0.0,0.0
+0.5,Chinatown,East Village South,True,1525.89,1531.02,5.13,2063.48,2021.54,41.93,0.0
+0.5,Lower East Side,East Village South,False,651.04,651.04,0.0,976.55,976.55,0.0,0.0
+0.75,Battery Park,Financial District,False,641.87,641.87,0.0,916.25,916.25,0.0,0.0
+0.75,Battery Park,South Street Seaport,True,1707.18,1709.02,1.84,2357.05,2328.96,28.09,25.3
+0.75,Battery Park,Civic Center,False,1761.68,1761.68,0.0,2416.88,2416.88,0.0,0.0
+0.75,Battery Park,Chinatown,False,2586.97,2586.97,0.0,3666.57,3666.57,0.0,19.36
+0.75,Battery Park,Lower East Side,True,3326.8,3547.56,220.76,4826.83,4657.55,169.28,44.58
+0.75,Battery Park,East Village South,True,3977.84,4198.6,220.76,5868.49,5699.21,169.28,37.67
+0.75,Financial District,South Street Seaport,True,1697.76,1734.61,36.85,2362.75,2303.54,59.21,24.93
+0.75,Financial District,Civic Center,False,1720.05,1720.05,0.0,2342.66,2342.66,0.0,0.0
+0.75,Financial District,Chinatown,True,2577.56,2612.57,35.01,3672.28,3641.16,31.12,19.17
+0.75,Financial District,Lower East Side,True,3317.39,3573.16,255.77,4832.53,4632.13,200.4,44.26
+0.75,Financial District,East Village South,True,3968.43,4224.2,255.77,5874.19,5673.79,200.4,37.44
+0.75,South Street Seaport,Civic Center,True,1657.64,1657.7,0.06,2367.94,2364.85,3.09,5.23
+0.75,South Street Seaport,Chinatown,False,1163.79,1163.79,0.0,1635.76,1635.76,0.0,35.59
+0.75,South Street Seaport,Lower East Side,True,1903.63,2082.12,178.49,2796.02,2738.3,57.71,50.07
+0.75,South Street Seaport,East Village South,True,2554.66,2733.15,178.49,3837.68,3779.96,57.71,38.14
+0.75,Civic Center,Chinatown,False,1011.78,1011.78,0.0,1436.18,1436.18,0.0,0.0
+0.75,Civic Center,Lower East Side,True,1751.62,1821.57,69.95,2596.43,2537.91,58.52,0.0
+0.75,Civic Center,East Village South,True,2402.65,2474.47,71.81,3638.09,3534.79,103.3,0.0
+0.75,Chinatown,Lower East Side,False,878.12,878.12,0.0,1177.77,1177.77,0.0,0.0
+0.75,Chinatown,East Village South,True,1525.89,1531.02,5.13,2216.07,2174.65,41.42,0.0
+0.75,Lower East Side,East Village South,False,651.04,651.04,0.0,1041.66,1041.66,0.0,0.0

@@ -1,0 +1,258 @@
+on_street,number_of_signs,average_parking_access_score
+West  181 Street,7,1.0
+West   71 Street,5,1.0
+West  126 Street,5,1.0
+Avenue C,4,1.0
+East   86 Street,4,1.0
+Chambers Street,3,1.0
+King Street,3,1.0
+Leonard Street,3,1.0
+North Moore Street,3,1.0
+West  130 Street,3,1.0
+Adam C Powell Boulevard,2,1.0
+Division Street,2,1.0
+Fort Washington Avenue,2,1.0
+Henry Street,2,1.0
+Hudson Street,2,1.0
+Leroy Street,2,1.0
+Murray Street,2,1.0
+Old Broadway,2,1.0
+Reade Street,2,1.0
+South Street,2,1.0
+West   68 Street,2,1.0
+West  150 Street,2,1.0
+York Avenue,2,1.0
+11 Avenue,1,1.0
+Audubon Avenue,1,1.0
+Chatham Square,1,1.0
+Claremont Avenue,1,1.0
+Clinton Street,1,1.0
+Columbia Street,1,1.0
+Dyckman Street,1,1.0
+East   98 Street,1,1.0
+East  116 Street,1,1.0
+Edward M Morgan Place,1,1.0
+Freedom Place South,1,1.0
+Ludlow Street,1,1.0
+Pike Street,1,1.0
+Trinity Place,1,1.0
+West   63 Street,1,1.0
+West  115 Street,1,1.0
+West  134 Street,1,1.0
+West  160 Street,1,1.0
+West  187 Street,1,1.0
+West Street,1,1.0
+St Nicholas Avenue,9,0.978
+East   14 Street,12,0.95
+Barclay Street,6,0.95
+East   42 Street,4,0.95
+Greenwich Street,4,0.95
+West   14 Street,38,0.937
+Liberty Street,11,0.936
+Lafayette Street,11,0.927
+East Broadway,4,0.925
+Little West   12 Street,4,0.925
+East   61 Street,17,0.924
+Mulberry Street,5,0.92
+2 Avenue,131,0.914
+East   35 Street,31,0.913
+Broadway,127,0.91
+Amsterdam Avenue,22,0.905
+3 Avenue,89,0.9
+7 Avenue,35,0.9
+West   50 Street,29,0.9
+East   54 Street,22,0.9
+East   36 Street,21,0.9
+West   52 Street,21,0.9
+5 Avenue,20,0.9
+East   46 Street,19,0.9
+West   42 Street,17,0.9
+East   47 Street,16,0.9
+East   52 Street,15,0.9
+East   21 Street,14,0.9
+East   49 Street,14,0.9
+East   20 Street,12,0.9
+East   38 Street,10,0.9
+East   43 Street,10,0.9
+East   51 Street,10,0.9
+West   13 Street,10,0.9
+East   17 Street,9,0.9
+East   22 Street,9,0.9
+East   53 Street,9,0.9
+East   59 Street,9,0.9
+East   60 Street,9,0.9
+7 Avenue South,8,0.9
+East   18 Street,8,0.9
+East   19 Street,8,0.9
+Howard Street,8,0.9
+Mott Street,8,0.9
+West   17 Street,8,0.9
+Grand Street,7,0.9
+Irving Place,7,0.9
+Astor Place,6,0.9
+East   62 Street,6,0.9
+East  125 Street,6,0.9
+Fulton Street,6,0.9
+John Street,6,0.9
+South End Avenue,6,0.9
+Spring Street,6,0.9
+West    3 Street,6,0.9
+West   18 Street,6,0.9
+West   23 Street,6,0.9
+West   26 Street,5,0.9
+West   82 Street,5,0.9
+East   31 Street,4,0.9
+East   33 Street,4,0.9
+Maiden Lane,4,0.9
+Park Avenue South,4,0.9
+East   23 Street,3,0.9
+East   63 Street,3,0.9
+Great Jones Street,3,0.9
+Old Slip,3,0.9
+West   32 Street,3,0.9
+West   67 Street,3,0.9
+Bleecker Street,2,0.9
+Bond Street,2,0.9
+East   10 Street,2,0.9
+Exchange Place,2,0.9
+Hanover Square,2,0.9
+Hester Street,2,0.9
+Pine Street,2,0.9
+Waverly Place,2,0.9
+West    4 Street,2,0.9
+West   34 Street,2,0.9
+William Street,2,0.9
+Beekman Street,1,0.9
+Broad Street,1,0.9
+East   64 Street,1,0.9
+East   68 Street,1,0.9
+West   25 Street,1,0.9
+East   11 Street,11,0.895
+9 Avenue,56,0.891
+Columbus Avenue,79,0.89
+Lexington Avenue,132,0.889
+Canal Street,42,0.888
+West   29 Street,17,0.888
+West   53 Street,27,0.881
+West   30 Street,21,0.881
+Warren Street,5,0.88
+East   45 Street,14,0.879
+West Broadway,22,0.877
+8 Avenue,41,0.876
+West   48 Street,16,0.875
+1 Avenue,50,0.874
+East   13 Street,11,0.873
+Madison Avenue,59,0.871
+Church Street,17,0.871
+East   39 Street,17,0.871
+Nassau Street,7,0.871
+West   31 Street,10,0.87
+Park Avenue,64,0.869
+West   51 Street,16,0.869
+6 Avenue,57,0.867
+East   37 Street,14,0.864
+East   41 Street,14,0.864
+East   55 Street,27,0.863
+East   56 Street,24,0.862
+East    4 Street,4,0.862
+West   33 Street,25,0.86
+Broome Street,10,0.86
+East   12 Street,11,0.859
+East   30 Street,12,0.858
+Washington Street,12,0.858
+West  125 Street,9,0.856
+East   57 Street,11,0.855
+West   27 Street,11,0.855
+West   38 Street,42,0.852
+West   15 Street,6,0.85
+West   49 Street,29,0.848
+West   46 Street,19,0.847
+West   39 Street,50,0.84
+West   56 Street,32,0.838
+East   28 Street,8,0.838
+West   57 Street,44,0.832
+West   45 Street,37,0.832
+10 Avenue,34,0.829
+Vanderbilt Avenue,7,0.829
+West   24 Street,7,0.829
+East   48 Street,27,0.826
+West   43 Street,23,0.826
+West   41 Street,20,0.825
+West   35 Street,19,0.821
+West   28 Street,30,0.817
+East   58 Street,12,0.817
+Front Street,6,0.817
+Wall Street,6,0.817
+East    9 Street,7,0.814
+Bowery,11,0.809
+East   40 Street,16,0.806
+West   36 Street,47,0.804
+West   37 Street,41,0.802
+4 Avenue,5,0.8
+West   96 Street,5,0.8
+Walker Street,3,0.8
+West   79 Street,3,0.8
+West   54 Street,27,0.796
+West   40 Street,23,0.791
+East   44 Street,8,0.788
+Pearl Street,23,0.778
+West   58 Street,8,0.775
+Ann Street,4,0.775
+East   24 Street,4,0.775
+East   78 Street,7,0.771
+East   50 Street,30,0.77
+East   16 Street,5,0.76
+West   47 Street,21,0.757
+West End Avenue,15,0.75
+Central Park West,6,0.75
+East   90 Street,6,0.75
+West   90 Street,4,0.75
+East    3 Street,3,0.75
+East   70 Street,3,0.75
+East   71 Street,3,0.75
+East   91 Street,3,0.75
+East   94 Street,3,0.75
+East   95 Street,3,0.75
+East    6 Street,2,0.75
+East   77 Street,2,0.75
+Riverside Drive,2,0.75
+West   75 Street,2,0.75
+West   83 Street,2,0.75
+Avenue B,1,0.75
+Cathedral Parkway,1,0.75
+East    2 Street,1,0.75
+East    5 Street,1,0.75
+East    7 Street,1,0.75
+East    8 Street,1,0.75
+East   73 Street,1,0.75
+East   85 Street,1,0.75
+East  111 Street,1,0.75
+Laurel Hill Terrace,1,0.75
+Market Street,1,0.75
+Suffolk Street,1,0.75
+West   21 Street,1,0.75
+West   73 Street,1,0.75
+West   74 Street,1,0.75
+West   76 Street,1,0.75
+West   78 Street,1,0.75
+West   80 Street,1,0.75
+West   85 Street,1,0.75
+West   86 Street,1,0.75
+West  106 Street,1,0.75
+West  175 Street,1,0.75
+West  180 Street,1,0.75
+West   55 Street,18,0.733
+Cedar Street,6,0.733
+East   32 Street,3,0.733
+Whitehall Street,4,0.725
+Water Street,8,0.712
+West   44 Street,31,0.71
+Central Park South,7,0.686
+West   16 Street,9,0.633
+Cooper Square,2,0.4
+Varick Street,2,0.4
+Duane Street,1,0.4
+East   69 Street,1,0.4
+Park Avenue Viaduct,1,0.4
+East   99 Street,2,0.2
+Central Park North,1,0.2

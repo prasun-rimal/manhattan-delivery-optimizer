@@ -1,0 +1,5 @@
+route,score_source,road_segments,physical_distance_meters,delivery_cost
+Shortest-distance baseline,NEUTRAL FALLBACK,18,1444.72,1683.1
+Shortest-distance baseline,SOUTH STREET,3,262.46,277.95
+Delivery-aware optimized,NEUTRAL FALLBACK,16,1276.61,1487.25
+Delivery-aware optimized,SOUTH STREET,4,432.41,457.92
