@@ -39,7 +39,7 @@ The main showcase route compares travel from the Financial District to Chinatown
 | Delivery-cost improvement | 34.62 units |
 | Dijkstra and A* agreement |        True |
 
-The optimized route added only 35.01 meters while reducing the modeled delivery cost by 34.62 units.
+The optimized route added only **35.01 meters** while reducing the modeled delivery cost by **34.62 units**.
 
 ![Financial District to Chinatown Showcase Route](figures/financial_district_to_chinatown_showcase_route.png)
 
@@ -52,7 +52,7 @@ The optimized route added only 35.01 meters while reducing the modeled delivery 
 * Implements Dijkstra's algorithm and A* search
 * Uses real NYC traffic, parking/loading sign, and truck-route datasets
 * Applies a component-based scoring model for incomplete public data coverage
-* Reports route distance, cost improvement, and data coverage
+* Reports route distance, cost improvement, and route-level data coverage
 * Visualizes routes through a Flask and Leaflet web application
 * Generates charts and CSV outputs for analysis and validation
 
@@ -60,12 +60,12 @@ The optimized route added only 35.01 meters while reducing the modeled delivery 
 
 ## Tech Stack
 
-**Languages:** Python, JavaScript, HTML, CSS
-**Backend:** Flask
-**Mapping:** Leaflet.js, OpenStreetMap
-**Data / Graph Tools:** pandas, NetworkX, OSMnx
-**Visualization:** Matplotlib
-**Algorithms:** Dijkstra's algorithm, A* search
+* **Languages:** Python, JavaScript, HTML, CSS
+* **Backend:** Flask
+* **Mapping:** Leaflet.js, OpenStreetMap
+* **Data / Graph Tools:** pandas, NetworkX, OSMnx
+* **Visualization:** Matplotlib
+* **Algorithms:** Dijkstra's algorithm, A* search
 
 ---
 
@@ -79,6 +79,12 @@ The project uses four main data sources:
 4. OpenStreetMap road network data through OSMnx
 
 The system combines these datasets with a Lower Manhattan driving graph to assign delivery-aware costs to road segments.
+
+### Data Availability Note
+
+This repository includes the processed output files needed to run the demo application locally, including the prepared Lower Manhattan graph and route-analysis outputs.
+
+The raw input CSV datasets are not included in the repository because they are large public datasets and are better downloaded directly from their original sources if someone wants to fully rebuild the data pipeline.
 
 ---
 
@@ -108,6 +114,22 @@ The delivery difficulty score combines:
 ```
 
 Because public datasets do not cover every street evenly, the project uses a component-based scoring method. If a street segment has traffic, parking, or truck-route data, that information is used. If a component is missing, the model applies a neutral fallback value and reports data coverage for transparency.
+
+---
+
+## What Happens When the App Runs
+
+When the Flask app is started locally, the system:
+
+1. Loads the prepared Lower Manhattan delivery-weighted graph
+2. Allows the user to select an origin and destination
+3. Computes the shortest-distance baseline route
+4. Computes the delivery-aware optimized route
+5. Verifies the delivery-aware result using A* search
+6. Returns route coordinates and metrics to the browser
+7. Displays both routes on a Leaflet map
+
+The baseline route is shown in blue, and the delivery-aware route is shown in red.
 
 ---
 
@@ -160,13 +182,20 @@ manhattan-delivery-optimizer/
 
 ---
 
-## How to Run
+## How to Run Locally
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/prasun-rimal/manhattan-delivery-optimizer.git
 cd manhattan-delivery-optimizer
+```
+
+Create and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 Install dependencies:
@@ -181,7 +210,19 @@ Run the Flask app:
 python app/app.py
 ```
 
-Then open the local URL shown in the terminal.
+Then open the local URL shown in the terminal. It will usually look like:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## Important Run Note
+
+The demo app is designed to run using the processed graph and output files already included in `data/output/`.
+
+To fully rebuild the project from raw datasets, the original NYC traffic, parking/loading sign, and truck-route datasets would need to be downloaded separately and placed into the expected local input folder.
 
 ---
 
