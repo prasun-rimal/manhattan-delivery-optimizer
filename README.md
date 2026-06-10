@@ -33,6 +33,22 @@ The app is not currently deployed online, but it is structured so a reviewer can
 
 ---
 
+## Screenshots
+
+### Interactive Route Comparison
+
+![Manhattan Delivery Optimizer web app showing route request controls, route metrics, and map visualization](docs/screenshots/01-web-app-results.png)
+
+### Route Map
+
+![Leaflet map comparing the shortest-distance route and delivery-aware optimized route across Lower Manhattan](docs/screenshots/02-route-map.png)
+
+### Route Metrics
+
+![Route result cards showing distance, cost improvement, data coverage, algorithm validation, and route summary](docs/screenshots/03-route-metrics.png)
+
+---
+
 ## Demo / Showcase Result
 
 The main showcase route compares travel from the Financial District to Chinatown.
