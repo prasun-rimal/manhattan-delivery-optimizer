@@ -63,6 +63,12 @@ function updateResults(comparison) {
         : "Algorithm check: Dijkstra and A* returned different routes.";
 
     document.getElementById("algorithm-check").textContent = algorithmText;
+
+    const routeSummary = comparison.route_changed
+        ? `Route summary: the optimized route adds ${formatNumber(comparison.added_distance_meters)} meters while reducing modeled delivery cost by ${formatNumber(comparison.delivery_cost_improvement)} units.`
+        : "Route summary: both strategies selected the same route for these locations.";
+
+    document.getElementById("route-summary").textContent = routeSummary;
 }
 
 function drawRoutes(data) {
@@ -109,6 +115,7 @@ async function calculateRoute() {
     const origin = document.getElementById("origin").value;
     const destination = document.getElementById("destination").value;
     const errorBox = document.getElementById("error-message");
+    const button = document.getElementById("calculate-route-button");
 
     errorBox.textContent = "";
 
@@ -116,6 +123,9 @@ async function calculateRoute() {
         errorBox.textContent = "Please choose two different locations.";
         return;
     }
+
+    button.disabled = true;
+    button.textContent = "Calculating...";
 
     try {
         const response = await fetch("/api/route", {
@@ -143,6 +153,9 @@ async function calculateRoute() {
         errorBox.textContent =
             "Could not calculate route. Check that the Flask server is running.";
         console.error(error);
+    } finally {
+        button.disabled = false;
+        button.textContent = "Calculate Route";
     }
 }
 

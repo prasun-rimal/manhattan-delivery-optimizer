@@ -5,11 +5,11 @@ This app connects the reusable routing engine to a simple web interface.
 """
 
 from pathlib import Path
+import os
 import sys
 
 from flask import Flask, jsonify, render_template, request
 
-# Allow app.py to import files from src/routing_engine
 PROJECT_FOLDER = Path(__file__).resolve().parent.parent
 ROUTING_ENGINE_FOLDER = PROJECT_FOLDER / "src" / "routing_engine"
 
@@ -80,7 +80,8 @@ def api_route():
 
 if __name__ == "__main__":
     app.run(
-        debug=True,
+        debug=os.getenv("FLASK_DEBUG") == "1",
         host="127.0.0.1",
-        port=5000
+        port=5000,
+        use_reloader=False
     )

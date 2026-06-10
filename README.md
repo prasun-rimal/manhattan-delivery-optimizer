@@ -25,6 +25,14 @@ The result is a system that demonstrates how real-world urban delivery constrain
 
 ---
 
+## Project Status
+
+This project is a local research prototype with a runnable Flask/Leaflet demo. The repository includes the processed graph and output files needed to run the demo without downloading the large raw NYC datasets.
+
+The app is not currently deployed online, but it is structured so a reviewer can clone the repository, install dependencies, run the Flask app, and test the route comparison locally.
+
+---
+
 ## Demo / Showcase Result
 
 The main showcase route compares travel from the Financial District to Chinatown.
@@ -45,6 +53,21 @@ The optimized route added only **35.01 meters** while reducing the modeled deliv
 
 ---
 
+## Web App Demo Flow
+
+To evaluate the interactive demo:
+
+1. Start the Flask app with `python app/app.py`
+2. Open `http://127.0.0.1:5000`
+3. Select `Financial District` as the origin
+4. Select `Chinatown` as the destination
+5. Click `Calculate Route`
+6. Compare the blue shortest-distance route with the red delivery-aware route
+
+The results panel shows distance, added distance, modeled delivery-cost improvement, data coverage, and whether Dijkstra and A* agree on the optimized route.
+
+---
+
 ## Features
 
 * Builds a routable Lower Manhattan street network using OSMnx and NetworkX
@@ -55,6 +78,19 @@ The optimized route added only **35.01 meters** while reducing the modeled deliv
 * Reports route distance, cost improvement, and route-level data coverage
 * Visualizes routes through a Flask and Leaflet web application
 * Generates charts and CSV outputs for analysis and validation
+
+---
+
+## Key Files
+
+* `app/app.py` - Flask API and web app entry point
+* `app/templates/index.html` - Leaflet demo interface
+* `app/static/js/map.js` - frontend route request and map rendering logic
+* `src/routing_engine/router.py` - shortest-distance and delivery-aware route calculations
+* `src/routing_engine/locations.py` - verified Lower Manhattan demo locations
+* `src/create_component_weighted_network.py` - builds the delivery-weighted street graph
+* `src/evaluate_component_routes.py` - compares baseline and optimized routes
+* `data/output/` - processed demo-ready graph and route-analysis outputs
 
 ---
 
@@ -134,6 +170,10 @@ The baseline route is shown in blue, and the delivery-aware route is shown in re
 ---
 
 ## Visualizations
+
+### Showcase Route
+
+![Financial District to Chinatown Showcase Route](figures/financial_district_to_chinatown_showcase_route.png)
 
 ### Average Traffic Volume by Hour
 
